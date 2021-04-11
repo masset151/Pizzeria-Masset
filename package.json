@@ -1,0 +1,28 @@
+{
+  "name": "pizzeria",
+  "version": "1.0.0",
+  "description": "Proyecto Final de desarrollo de aplicaciones web",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masset151/Pizzeria-Masset.git"
+  },
+  "author": "Andres Masset Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masset151/Pizzeria-Masset/issues"
+  },
+  "homepage": "https://github.com/masset151/Pizzeria-Masset#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "mongose": "0.0.2-security",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
