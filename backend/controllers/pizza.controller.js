@@ -16,6 +16,8 @@ PizzaCtrl.obtenerPizza = async (req,res) =>{
     console.log(req.params.id)
     const pizza = await Pizza.findById(req.params.id).exec()
     res.json(pizza)
+    
+
 
     
 
