@@ -1,0 +1,17 @@
+{
+	"_id" : ObjectId("6073299566f8421bcc0588f5"),
+	"nombre" : "Carbonara",
+	"ingredientes" : "masa con base de tomate y morzarella con bacon,cebolla,champiñones y huevo",
+	"foto" : "https://i.blogs.es/451cf6/pizza-carbonara-pakus-directo-paladar/1366_2000.jpg",
+	"precio" : 12.3,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("60732a3766f8421bcc0588f7"),
+	"nombre" : "Boloñesa",
+	"ingredientes" : "masa con base de tomate y morzarella con carne de ternera",
+	"foto" : "https://placeralplato.com/files/2020/02/pizza-boloesa-e1582728731428-640x480.jpg",
+	"precio" : 11.5,
+	"__v" : 0
+}
+
