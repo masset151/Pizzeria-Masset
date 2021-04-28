@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/masset151/Pizzeria-Masset#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "json": "^11.0.0",
     "mongoose": "^5.12.3",
     "mongose": "0.0.2-security",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "server": "^1.0.32"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
