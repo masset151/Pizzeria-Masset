@@ -5,7 +5,7 @@ const PizzaSchema = new Schema({
     //id:{type:Number,required:true,unique:true},
     nombre:{type:String,required: true},
     ingredientes: {type:String, required:true},
-    foto:{type:String,required:true},
+    image:{type:String,required:false},
     precio: {type:Number,required:true}
 });
 

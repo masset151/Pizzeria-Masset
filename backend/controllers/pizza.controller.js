@@ -12,6 +12,8 @@ PizzaCtrl.getPizzas = async (req, res) => {
 
 
 
+
+
 PizzaCtrl.obtenerPizza = async (req,res) =>{
     console.log(req.params.id)
     const pizza = await Pizza.findById(req.params.id).exec()
@@ -41,7 +43,7 @@ PizzaCtrl.editarPizza = async (req,res) => {
     const pizza = {
         nombre:req.body.nombre,
         ingredientes: req.body.ingredientes,
-        foto: req.body.foto,
+        image: req.body.image,
         precio:req.body.precio
     }
     const pizzaU = await Pizza.findByIdAndUpdate(id,{$set:pizza},{new:true})

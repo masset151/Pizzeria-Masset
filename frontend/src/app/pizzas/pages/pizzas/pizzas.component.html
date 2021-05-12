@@ -1,0 +1,28 @@
+<h1>Nuestras Pizzas</h1>
+<hr>
+<mat-divider></mat-divider>
+<br>
+
+
+
+<div class="container">
+     <div class="alert alert-primary" role="alert">
+          Esta pagina es solo una pequeña muestra del proyecto final, para acceder a un apartado
+          pulsen en el menu, la idea de esta "beta" es mostrar una aplicacion desplegada y el codigo para recibir
+          indicaciones para mejorar la idea y el codigo de cara al proyecto final, las funciones de las tarjetas no estan
+          implementadas, pero si lo estaran de cara al proyecto final
+        </div>
+     <div class="row">
+          <div class="col"*ngFor="let pizza of pizza">
+               <div class="row-mt5">
+                    <app-pizza-tarjeta [pizza]="pizza" ></app-pizza-tarjeta>
+               </div>
+               
+                    
+               </div>
+          </div>
+     
+     
+     <router-outlet></router-outlet>
+
+</div>

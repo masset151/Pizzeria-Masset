@@ -4,7 +4,8 @@
   "description": "Proyecto Final de desarrollo de aplicaciones web",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/index.js "
+    "dev": "nodemon index.js ",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,14 @@
   },
   "homepage": "https://github.com/masset151/Pizzeria-Masset#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
+    "express-validator": "^6.10.1",
     "json": "^11.0.0",
-    "mongoose": "^5.12.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
     "mongose": "0.0.2-security",
     "morgan": "^1.10.0",
     "server": "^1.0.32"

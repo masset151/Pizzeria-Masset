@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Pizzeria } from 'src/app/interfaces/heroes.interafces';
-import { PizzaService } from '../pizza.service';
+import { Pizzeria } from 'src/app/interfaces/pizza.interafces';
+import { PizzaService } from '../../pizza.service';
+
 
 @Component({
   selector: 'app-pizzas',

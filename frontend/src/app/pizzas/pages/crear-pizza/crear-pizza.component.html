@@ -1,0 +1,57 @@
+<h1>Crear Pizza Personalizada</h1>
+<hr>
+<div fxLayout="row" fxLayoutGap="40px">
+    <div class="alert alert-warning" role="alert">
+       Cree su propia Pizza, aparecera en nuestro menu
+      </div>
+    <div fxFlex="50" fxLayout="Column">
+        <div fxLayout="row" fxLayoutGap="20px"
+        fxLayout.xs="column">
+            <mat-form-field fxFlex="100"> 
+              
+                <mat-label>Nombre </mat-label>
+            
+                <input matInput type="text"
+                    
+                [(ngModel)] ="pizza.nombre"required>
+            
+                    
+                </mat-form-field>
+            
+                <mat-form-field fxFlex="100"> 
+                    <mat-label>Ingredientes </mat-label>
+                    
+                    <input matInput type="text" [(ngModel)] ="pizza.ingredientes"
+                        required>
+                
+                        
+                    </mat-form-field>
+        </div>
+    
+                        <mat-form-field fxFlex="100"> 
+                            <mat-label>Imagen URL </mat-label>
+                        
+                            <input matInput type="url"  [(ngModel)] ="pizza.image"
+                                required>
+                        
+                                
+                            </mat-form-field>
+    
+                            <br>
+                            <div fxLayout >
+                                <button mat-raised-button color="primary" (click)="guardar()" >
+                                    <mat-icon>edit</mat-icon>
+                                    Crear
+                                 </button>
+                                 
+                                 <span class="spacer"></span>
+    
+                            </div>
+    
+                            
+    
+    
+    </div>
+    
+    
+    </div>

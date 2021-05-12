@@ -15,7 +15,6 @@ import { PrimengModule } from 'src/app/primeng/primeng.module';
     BrowserModule,
     BrowserAnimationsModule,
     MenubarModule,
-    PrimengModule,
   ],exports:[MenuComponent]
 })
 export class MenuModule { }

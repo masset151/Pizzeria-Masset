@@ -1,8 +1,8 @@
 export interface Pizzeria {
-    _id:          string;
+   
     nombre:       string;
     ingredientes: string;
-    foto:         string;
+    image:         string;
     precio:       number;
-    __v:          number;
+   
 }
