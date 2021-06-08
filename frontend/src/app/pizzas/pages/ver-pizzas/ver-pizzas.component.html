@@ -1,1 +1,35 @@
-<p>ver-pizzas works!</p>
+<mat-grid-list cols="1" *ngIf="!pizza;else divPizza">
+   <mat-spinner></mat-spinner>
+</mat-grid-list>
+
+
+<ng-template #divPizza>
+   <div
+   fxLayout="row"
+   fxLayout.xs="column"
+   fxLayoutGap="30px"
+   
+   >
+   
+   <div fxFlex="50">
+      <h1>Pizza {{pizza.nombre}}</h1>
+      <mat-divider></mat-divider>
+      <img [src]='pizza.image' height="720px" width="560px">
+      
+   </div>
+
+   <div fxFlex="50">
+      <h1>{{pizza.nombre}}</h1><smal>{{pizza.precio}}€</smal>
+      <mat-divider></mat-divider>
+      <mat-list>
+         <mat-list-item>Pizza {{pizza.nombre}}</mat-list-item>
+         <mat-list-item>{{pizza.ingredientes}}</mat-list-item>
+         <mat-list-item>Precio: {{pizza.precio}}€</mat-list-item>
+      </mat-list>
+      <br>
+      <button class="btn btn-primary float-end"[routerLink]="['/carta/comprar', pizza._id ]">Comprar</button>
+      <span class="form-text text-danger" *ngIf="pagado">La contraseñas deben de ser iguales </span>
+   </div>
+
+   </div>
+</ng-template>

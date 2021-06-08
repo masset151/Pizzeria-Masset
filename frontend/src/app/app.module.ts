@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { PizzasModule } from './pizzas/pizzas.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+ 
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,7 @@ import { PizzasModule } from './pizzas/pizzas.module';
     MenuModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    PizzasModule
+    PizzasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,16 +11,24 @@ import { PizzaTarjetaComponent } from './components/pizza-tarjeta/pizza-tarjeta.
 import { VerPizzasComponent } from './pages/ver-pizzas/ver-pizzas.component';
 import { PizzasComponent } from './pages/pizzas/pizzas.component';
 import { CrearPizzaComponent } from './pages/crear-pizza/crear-pizza.component';
-
+import { ComprarComponent } from './pages/comprar/comprar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ImagePipe } from './pipes/image.pipe';
 
 @NgModule({
-  declarations: [PizzaTarjetaComponent,CrearPizzaComponent,VerPizzasComponent,PizzasComponent, CrearPizzaComponent],
+  declarations: [PizzaTarjetaComponent,
+    CrearPizzaComponent,
+    VerPizzasComponent,
+    PizzasComponent, 
+    CrearPizzaComponent, 
+    ComprarComponent,
+    ImagePipe],
   imports: [
     CommonModule,
     PizzasRoutingModule,
     FormsModule,
-    BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     FlexLayoutModule,
     MaterialModule
   ]

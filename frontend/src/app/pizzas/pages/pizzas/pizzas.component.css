@@ -5,3 +5,8 @@
   .example-header-image {
     background-size: cover;
   }
+
+  img{
+    width: 100%;
+    border-radius: 5px;
+  }

@@ -24,5 +24,10 @@ export class PizzaService {
     return this.http.post<Pizzeria>(url,pizza)
   }
 
+  getPizzaNombre(id:string){
+    const url = `${this.baseUrl}pizzas/${id}`
+    return this.http.get<Pizzeria>(url);
+  }
+
 
 }
