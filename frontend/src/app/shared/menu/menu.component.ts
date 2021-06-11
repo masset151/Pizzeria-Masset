@@ -1,5 +1,10 @@
+import { sharedStylesheetJitUrl } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/interfaces/menu.interface';
+import { AuthModule } from '../../auth/auth.module';
+
+
+
 
 
 @Component({
@@ -22,13 +27,12 @@ export class MenuComponent {
       ruta:"carta/crear",
       nombre:"Crea tu propia Pizza"
     },
-    {
-      ruta:"carta/carrito",
-      nombre:"carrito"
-
-    }
   ];
 
   constructor() { }
+
+  
+
+  
 
 }

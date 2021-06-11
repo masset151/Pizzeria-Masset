@@ -1,4 +1,5 @@
 export interface Menu{
-    ruta:string;
+    accion?:void;
+    ruta?:string;
     nombre:string;
 }

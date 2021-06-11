@@ -9,4 +9,4 @@ router.get('/:id',pizzas.obtenerPizza)
 router.put('/:id',pizzas.editarPizza),
 router.delete('/:id',pizzas.eliminarPizza),
 
-module.exports = router
+module.exports = router;

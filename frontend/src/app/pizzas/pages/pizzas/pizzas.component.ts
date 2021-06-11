@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pizzeria } from 'src/app/interfaces/pizza.interafces';
 import { PizzaService } from '../../pizza.service';
+import { AuthServicesService } from '../../../auth/auth-services.service';
 
 
 @Component({
@@ -21,7 +22,11 @@ pizza:Pizzeria[] = []
     .subscribe(pizza => this.pizza = pizza)
   }
 
-  constructor(private pizzaService:PizzaService) { }
+  constructor(private pizzaService:PizzaService,private authService:AuthServicesService) { }
+
+  logout(){
+    return this.authService.logout();
+  }
 
   
 

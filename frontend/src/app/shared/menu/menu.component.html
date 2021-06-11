@@ -1,11 +1,28 @@
-<ul class="list-group">
+
+<!--<ul class="list-group">
     <li *ngFor="let item of menu"
         class="list-group-item"
         [routerLink]="[item.ruta]"
         routerLinkActive="active">
 
-        {{item.nombre}}
+        
 
     </li>
     
 </ul>
+<ul class="nav">
+    <li class="nav-item"
+    *ngFor="let item of menu"
+    [routerLink]="[item.ruta]"
+    routerLinkActive="active">
+    {{item.nombre}}
+    </li>
+  </ul>
+
+-->
+
+
+
+  <nav class="nav nav-pills nav-fill">
+    <li *ngFor="let item of menu" class="nav-item nav-link active" [routerLink]="[item.ruta]" routerLinkActive="active">{{item.nombre}}</li>
+  </nav>

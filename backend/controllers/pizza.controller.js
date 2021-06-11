@@ -32,7 +32,9 @@ PizzaCtrl.crearPizza =  async (req,res) => {
     await  npizza.save();
     console.log(req.body);
     res.json({
-        'status':'Pizza Guardada'
+        'status':'Pizza Guardada',
+         ok:true
+
     })
     
 

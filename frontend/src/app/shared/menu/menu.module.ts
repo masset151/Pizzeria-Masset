@@ -4,7 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu.component';
 import {MenubarModule} from 'primeng/menubar';
-import { PrimengModule } from 'src/app/primeng/primeng.module';
+
+
+
 
 
 

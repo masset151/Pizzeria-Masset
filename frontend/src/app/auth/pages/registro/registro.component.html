@@ -1,1 +1,40 @@
-<p>registro works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card-signin my-5">
+                <div class="card-body">
+                    <h4>Registro</h4>
+                    <form class="form-signin" [formGroup]="miFormulario"(ngSubmit)="registro()">
+                        <h4>Nombre</h4>
+                        <div class="form-label-group">
+                            
+                            <input type="text" id="inputEmail" placeholder="Intrduzca su nombre" class="form-control" placeholder="Email address"  formControlName="nombre" required>
+                           
+                        </div>
+                       
+                       
+                        <h4>Email</h4>
+                        <div class="form-label-group">
+                            
+                            <input type="email" id="inputEmail" placeholder="Intrduzca su email" class="form-control" placeholder="Email address"  formControlName="email">
+                           
+                        </div>
+                        <h4>Contraseña</h4>
+                        <div class="form-label-group">
+                            <input type="password" id="inputPassword" class="form-control" formControlName="password" placeholder="Password" required>
+                          </div>
+                          
+                          <div class="custom-control custom-checkbox mb-3">
+                              <input type="checkbox" class="custom-checkbox mb-3">
+                              <label class="custom-control-label" for="customCheck1">Recuerdame</label>
+                              <br>
+                              <small>¿Ya esta registrado? <a href="auth/login">inicie Sesion</a></small>
+                          </div>
+                          
+                          <button class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

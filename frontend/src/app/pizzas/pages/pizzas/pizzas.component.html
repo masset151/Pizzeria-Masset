@@ -1,23 +1,12 @@
 <h1>Nuestras Pizzas</h1>
+<div class="col-md-3 col-sm-12">
+     <button class="btn btn-danger" (click)="logout()">Cerrar Sesion</button>
+</div>
 <hr>
 <mat-divider></mat-divider>
-<br>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="30px">
+     <div  fxFlex="30" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let pizza of pizza">
+          <app-pizza-tarjeta [pizza]="pizza"></app-pizza-tarjeta>
 
-
-
-<div class="container">
-     <div class="row">
-          <div class="col"*ngFor="let pizza of pizza">
-               <div class="row-mt5">
-                    <app-pizza-tarjeta [pizza]="pizza"></app-pizza-tarjeta>
-                    
-               </div>
-               
-                    <app-carrito [carro]="carro"></app-carrito>
-               </div>
-          </div>
-     
-     
-     <router-outlet></router-outlet>
-
+     </div>
 </div>

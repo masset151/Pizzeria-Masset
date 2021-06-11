@@ -5,6 +5,8 @@ import { PizzaService } from '../../pizza.service';
 import { switchMap } from 'rxjs/operators'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-crear-pizza',
@@ -27,8 +29,15 @@ export class CrearPizzaComponent {
       if(this.pizza.nombre.trim().length==0){
         return;
       }
-        this.pizzaService.agregarPizzas(this.pizza).subscribe(res =>
-          console.log(res))
+        this.pizzaService.agregarPizzas(this.pizza).subscribe(ok => {
+          if(!ok){
+            Swal.fire('error','Se ha producido un error')
+          }else{
+            this.router.navigate(['/carta/listado']);
+          }
+        })
+
+         
       
     }
 
