@@ -1,12 +1,25 @@
 <h1>Nuestras Pizzas</h1>
+<mat-grid-list cols="1" *ngIf="!pizza; else divPizzas">
+     <mat-grid-tile>
+         <mat-spinner
+         
+         
+         ></mat-spinner>
+     </mat-grid-tile>
+ </mat-grid-list>
+
+<ng-template #divPizzas>
+
 <div class="col-md-3 col-sm-12">
      <button class="btn btn-danger" (click)="logout()">Cerrar Sesion</button>
 </div>
 <hr>
 <mat-divider></mat-divider>
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="30px">
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="50px">
      <div  fxFlex="30" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let pizza of pizza">
           <app-pizza-tarjeta [pizza]="pizza"></app-pizza-tarjeta>
 
      </div>
 </div>
+
+</ng-template>

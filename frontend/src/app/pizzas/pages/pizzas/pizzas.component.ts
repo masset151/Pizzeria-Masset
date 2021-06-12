@@ -4,6 +4,9 @@ import { PizzaService } from '../../pizza.service';
 import { AuthServicesService } from '../../../auth/auth-services.service';
 
 
+
+
+
 @Component({
   selector: 'app-pizzas',
   templateUrl: './pizzas.component.html',
@@ -11,13 +14,15 @@ import { AuthServicesService } from '../../../auth/auth-services.service';
 })
 export class PizzasComponent implements OnInit {
 
+ 
 
-pizza:Pizzeria[] = []
+
+pizza!:Pizzeria[];
 
   
 
   ngOnInit(): void {
-
+    console.log(this.pizza)
     this.pizzaService.ObtenerPizzas()
     .subscribe(pizza => this.pizza = pizza)
   }

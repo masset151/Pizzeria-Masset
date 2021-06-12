@@ -5,7 +5,7 @@
       <mat-card-title>Pizza {{pizza.nombre}}</mat-card-title>
       <mat-card-subtitle>{{pizza.precio}}€</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="pizza.image" alt="Pizza">
+    <img mat-card-image [src]="pizza|imagen" width="274" height="170">
     <mat-card-content>
       <p>
         {{pizza.ingredientes}}
