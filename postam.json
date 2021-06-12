@@ -1,0 +1,131 @@
+{
+    "info": {
+        "_postman_id": "4ef5f1d8-da03-4ed0-9916-678deb7a9b49",
+        "name": "Pizzeria",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Login",
+            "id": "f288fdb7-02b5-4808-a3a1-df9bce4107d0",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"email\":\"masset.ruiz151@gmail.com\",\r\n    \"password\":\"usuario\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/users/login"
+            },
+            "response": []
+        },
+        {
+            "name": "ValidarToken",
+            "id": "5bee3cd3-22cf-4e86-b9dc-4713f062fb4a",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MGM0N2Y4OGRkZmM0NjAwMTVkOWM5MTciLCJub21icmUiOiJQb3N0YW0iLCJpYXQiOjE2MjM0OTA0NDAsImV4cCI6MTYyMzU3Njg0MH0.RA2y9UsAjFqgnqi_8Rlp2EEdjHjW7gsVBLjN5hSzCuU",
+                        "type": "text"
+                    }
+                ],
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/users/token"
+            },
+            "response": []
+        },
+        {
+            "name": "Registro",
+            "id": "a959bf8a-791d-45cf-a55a-a3cf22077715",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"nombre\":\"Postam\",\r\n    \"email\":\"postman@postman.com\",\r\n    \"password\":\"usuario\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/users/new"
+            },
+            "response": []
+        },
+        {
+            "name": "Añadir Pizza",
+            "id": "b7e32f35-85be-465e-886d-20ce6eb05593",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n     \"nombre\": \"Carbonara\",\r\n    \"ingredientes\": \"masa cubierta con salsa carbonara y queso morzarrella con Bacon,Cebolla y Champiñon\",\r\n    \"precio\": 9,\r\n    \"__v\": 0,\r\n    \"image\": \"https://i.blogs.es/451cf6/pizza-carbonara-pakus-directo-paladar/1366_2000.jpg\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/pizzas/"
+            },
+            "response": []
+        },
+        {
+            "name": "Listar Pizzas",
+            "id": "967b5b20-1a45-4cf3-9122-c29ec492bd48",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/pizzas/"
+            },
+            "response": []
+        },
+        {
+            "name": "VerPizza",
+            "id": "4739322e-f608-462d-8075-c0734ef1ac03",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/pizzas/60c34c454da55a001580cfe4"
+            },
+            "response": []
+        },
+        {
+            "name": "Editar Pizza",
+            "id": "851e5e2e-ec99-4d9a-80cc-b179a794ee76",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n        \"nombre\": \"Defensa\",\r\n        \"ingredientes\": \"Ingredientes\",\r\n        \"image\": \"\",\r\n        \"precio\": 9.99,\r\n        \"__v\": 0\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/pizzas/60c476c4ddfc460015d9c916"
+            },
+            "response": []
+        },
+        {
+            "name": "BorrarPizza",
+            "id": "a206f073-c9b4-4b5b-bfe5-7fc711bf0115",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": "https://pizzeriasan-andres.herokuapp.com/api/pizzas/60c476c4ddfc460015d9c916"
+            },
+            "response": []
+        }
+    ]
+}
